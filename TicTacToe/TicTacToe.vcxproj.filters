@@ -41,5 +41,8 @@
     <Text Include="audio\License.txt">
       <Filter>Resource Files</Filter>
     </Text>
+    <Text Include="..\License.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
   </ItemGroup>
 </Project>

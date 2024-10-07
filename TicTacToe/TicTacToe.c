@@ -231,7 +231,6 @@ void HandleUpdate(struct Window* w) {
         }
     } else if (w->game.state == O_TURN) {
         Vector2 move = w->o_strategy(w);
-        printf("%f %f\n", move.x, move.y);
         if (move.x != -1 && move.y != -1 && w->game.board[(int)move.y][(int)move.x] == START) {
             w->game.board[(int)move.y][(int)move.x] = w->game.state;
             w->game.state = NextTurn(w->game.state);

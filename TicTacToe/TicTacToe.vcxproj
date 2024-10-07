@@ -148,6 +148,7 @@
     <Image Include="..\Game.png" />
   </ItemGroup>
   <ItemGroup>
+    <Text Include="..\License.txt" />
     <Text Include="audio\License.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
