@@ -15,18 +15,8 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="TicTacToe.c">
+    <ClCompile Include="Tests.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="TicTacToe.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Audio\switch_005.ogg">
-      <Filter>Resource Files</Filter>
-    </None>
   </ItemGroup>
 </Project>

@@ -15,16 +15,11 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="TicTacToeTests.cpp">
+    <ClCompile Include="BoardLogic.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="pch.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="pch.h">
+    <ClCompile Include="BoardLogic.h">
       <Filter>Header Files</Filter>
-    </ClInclude>
+    </ClCompile>
   </ItemGroup>
 </Project>
