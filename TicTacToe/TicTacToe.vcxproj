@@ -141,7 +141,14 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Audio\switch_005.ogg" />
+    <None Include="..\README.md" />
+    <None Include="audio\select_005.ogg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\Game.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="audio\License.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

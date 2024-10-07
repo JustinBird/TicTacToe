@@ -40,12 +40,10 @@ Vector2 RandomStrategy(struct Window* w) {
 }
 
 Vector2 BlockStrategy(struct Window* w) {
-    printf("Block Strategy\n");
     // Check for us winning
     for (int i = 0; i < NUM_TILES; i++) {
         for (int j = 0; j < NUM_TILES; j++) {
             if (w->game.board[i][j] != START) {
-                printf("Skipping %d %d\n", i, j);
                 continue;
             }
 
@@ -53,7 +51,6 @@ Vector2 BlockStrategy(struct Window* w) {
             enum GameState win = CheckWin(w->game.board);
             w->game.board[i][j] = START;
             if (win == w->game.state + TURN_WIN_OFFSET) {
-                printf("Found win\n");
                 return (Vector2) { j, i };
             }
         }
@@ -63,7 +60,6 @@ Vector2 BlockStrategy(struct Window* w) {
     for (int i = 0; i < NUM_TILES; i++) {
         for (int j = 0; j < NUM_TILES; j++) {
             if (w->game.board[i][j] != START) {
-                printf("Skipping %d %d\n", i, j);
                 continue;
             }
 
@@ -72,7 +68,6 @@ Vector2 BlockStrategy(struct Window* w) {
             enum GameState win = CheckWin(w->game.board);
             w->game.board[i][j] = START;
             if (win == next + TURN_WIN_OFFSET) {
-                printf("Found block\n");
                 return (Vector2) { j, i };
             }
         }
@@ -109,7 +104,7 @@ void InitGame(struct Window* w) {
     w->sounds = true;
 
     InitAudioDevice();
-    w->click_sound = LoadSound("Audio/select_005.ogg");
+    w->click_sound = LoadSound("audio/select_005.ogg");
     w->x_strategy = &ManualStrategy;
     w->o_strategy = &BlockStrategy;
 }

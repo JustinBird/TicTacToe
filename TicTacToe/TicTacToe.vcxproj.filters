@@ -25,8 +25,21 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Audio\switch_005.ogg">
+    <None Include="..\README.md">
       <Filter>Resource Files</Filter>
     </None>
+    <None Include="audio\select_005.ogg">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\Game.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="audio\License.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
   </ItemGroup>
 </Project>
